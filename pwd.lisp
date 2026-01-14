@@ -132,13 +132,11 @@
   :hnuid "xena"
   :bio "Creator of Anubis.  Technical educator, conference speaker and Twitch streamer.")
 
- (:name ""
-  :site ""
-  :blog ""
-  :feed ""
-  :about ""
-  :now ""
-  :hnuid ""
-  :bio "")
+ (:name "Lawrence Gimenez"
+  :site "https://law.gmnz.xyz"
+  :blog "https://law.gmnz.xyz/blog/"
+  :feed "https://law.gmnz.xyz/feed"
+  :hnuid "lawgimenez"
+  :bio "Mobile Developer, I write both work and personal stuffs.")
 
  (:end))
