@@ -81,7 +81,7 @@ creating a pull request, please follow these guidelines:
 
  3. If certain information is not available or should not be included,
     remove the corresponding property entirely.  For example, if no
-    'about' link is provided, delete the entire `:about` line from the
+    'about' link exists, delete the entire `:about` line from the
     entry.
 
 Alternatively, [create an issue][ISSUES] and post the website details
@@ -89,12 +89,13 @@ in the following format:
 
 ````lisp
 ```
- (:name "Author Name (first name and last name)"
+ (:name "Your first name and last name"
   :site "https://example.com/"
+  :blog "https://example.com/blog/ (Only if you have a separate blog URL)"
   :feed "https://example.com/feed.xml"
   :about "https://example.com/about/"
   :now "https://example.com/now/"
-  :hnuid "example (user ID on HN)"
+  :hnuid "example (Your HN user ID)"
   :bio "A brief third-person description of yourself, not exceeding 80 characters.")
 ```
 ````
