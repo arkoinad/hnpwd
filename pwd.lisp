@@ -13,6 +13,13 @@
   :hnuid "xorvoid"
   :bio "Writes about low-level programming and mathematics.")
 
+ (:name "Beast Hacker"
+  :site "https://beasthacker.com/"
+  :about "https://beasthacker.com/about.html"
+  :now "https://beasthacker.com/now.html"
+  :hnuid "beast-hacker"
+  :bio "Makes small things on the internet.")
+
   (:name "Captain's Quarters"
   :site "https://quarters.captaintouch.com/"
   :feed "https://quarters.captaintouch.com/blog/posts.xml"
