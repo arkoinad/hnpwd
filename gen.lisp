@@ -37,6 +37,24 @@
         (error "~a - Bio of length ~a exceeds ~a characters"
                (getf item :name) (length bio) max-len)))))
 
+(defun weekday-name (weekday-index)
+  "Given an index, return the corresponding day of week."
+  (nth weekday-index '("Mon" "Tue" "Wed" "Thu" "Fri" "Sat" "Sun")))
+
+(defun month-name (month-number)
+  "Given a number, return the corresponding month."
+  (nth (1- month-number) '("Jan" "Feb" "Mar" "Apr" "May" "Jun"
+                           "Jul" "Aug" "Sep" "Oct" "Nov" "Dec")))
+
+(defun format-date (universal-time)
+  "Convert universal-time (integer) to RFC-2822 date string."
+  (multiple-value-bind (second minute hour date month year day dst)
+      (decode-universal-time universal-time 0)
+    (declare (ignore dst))
+    (format nil "~a, ~2,'0d ~a ~4,'0d ~2,'0d:~2,'0d:~2,'0d UTC"
+            (weekday-name day) date (month-name month) year
+            hour minute second)))
+
 (defun make-opml-outline (item)
   "Create an outline element for the specified website entry."
   (with-output-to-string (s)
@@ -55,6 +73,10 @@
     (format s "<opml version=\"2.0\">~%")
     (format s "  <head>~%")
     (format s "    <title>HN Personal Websites</title>~%")
+    (format s "    <dateCreated>~a</dateCreated>~%"
+            (format-date (encode-universal-time 0 0 0 14 1 2025 0)))
+    (format s "    <dateModified>~a</dateModified>~%"
+            (format-date (get-universal-time)))
     (format s "  </head>~%")
     (format s "  <body>~%")
     (format s "    <!-- ~a entries -->~%" (length items))
@@ -128,6 +150,9 @@
     (format s "        This website is not affiliated with Y Combinator.~%")
     (format s "        This is a community-maintained directory of~%")
     (format s "        personal websites by active members of the HN community.~%")
+    (format s "      </p>~%")
+    (format s "      <p>~%")
+    (format s "        Last updated on ~a.~%" (format-date (get-universal-time)))
     (format s "      </p>~%")
     (format s "    </footer>~%")
     (format s "  </body>~%")
