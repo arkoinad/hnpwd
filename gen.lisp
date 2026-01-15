@@ -108,10 +108,14 @@
   (let ((errors))
     (dolist (item items)
       (dolist (url (pick-urls item))
+        (unless (or (string-starts-with-p "http://" url)
+                    (string-starts-with-p "https://" url))
+          (push (fstr "~a <~a>: URL must start with 'http://' or 'https://'"
+                      (getf item :name) url) errors))
         (when (< (count #\/ url) 3)
           (push (fstr "~a <~a>: URL must have at least three slashes"
                       (getf item :name) url) errors))))
-    errors))
+    (reverse errors)))
 
 (defun validate-unique-urls (items)
   "Check that there are no duplicates in the URLs within the same entry."

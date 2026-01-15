@@ -140,7 +140,11 @@
   (let ((bio "12345678901234567890123456789012345678901234567890123456789012345678901234567890."))
     (assert (= (length (validate-bio-texts `((:bio ,bio)))) 1))))
 
-(test-case validate-urls
+(test-case validate-urls-protocol
+  (assert (= (length (validate-urls '((:site "example/foo/bar/baz/")))) 1))
+  (assert (= (length (validate-urls '((:site "www.example.com")))) 2)))
+
+(test-case validate-urls-slashes
   (assert (= (length (validate-urls '((:site "http://site/")))) 0))
   (assert (= (length (validate-urls '((:site "http://site")))) 1))
   (assert (= (length (validate-urls '((:blog "http://blog")))) 1))
