@@ -42,6 +42,13 @@
   :hnuid "beast-hacker"
   :bio "Makes small things on the Internet.")
 
+ (:name "Brajeshwar Oinam"
+  :site "https://brajeshwar.com/"
+  :about "https://brajeshwar.com/about/"
+  :now "https://brajeshwar.com/now/"
+  :hnuid "Brajeshwar"
+  :bio "Helping build a beautiful & meaningful world for my daughters & their friends.")
+
  (:name "Captain's Quarters"
   :site "https://quarters.captaintouch.com/"
   :feed "https://quarters.captaintouch.com/blog/posts.xml"
