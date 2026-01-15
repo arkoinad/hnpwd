@@ -44,9 +44,9 @@
   (multiple-value-bind (second minute hour date month year day dst)
       (decode-universal-time universal-time 0)
     (declare (ignore dst))
-    (format nil "~a, ~2,'0d ~a ~4,'0d ~2,'0d:~2,'0d:~2,'0d UTC"
-            (weekday-name day) date (month-name month) year
-            hour minute second)))
+    (fstr "~a, ~2,'0d ~a ~4,'0d ~2,'0d:~2,'0d:~2,'0d UTC"
+          (weekday-name day) date (month-name month) year
+          hour minute second)))
 
 
 ;;; Validations
@@ -130,19 +130,24 @@
          (string= (getf item :site) "")))
    (read-list "pwd.lisp")))
 
+(defun select-opml-entries (items)
+  "Select entries that can be included in OPML."
+  (remove-if-not (lambda (item)
+                   (and (getf item :name)
+                        (getf item :feed)
+                        (getf item :site))) items))
+
 (defun make-opml-outline (item)
   "Create an outline element for the specified website entry."
-  (with-output-to-string (s)
-    (when (and (getf item :name) (getf item :feed) (getf item :site))
-      (format s
-              "      <outline type=\"rss\" text=\"~a\" title=\"~a\" xmlUrl=\"~a\" htmlUrl=\"~a\"/>~%"
-              (getf item :name)
-              (getf item :name)
-              (getf item :feed)
-              (getf item :site)))))
+  (fstr "      <outline type=\"rss\" text=\"~a\" title=\"~a\" xmlUrl=\"~a\" htmlUrl=\"~a\"/>~%"
+        (getf item :name)
+        (getf item :name)
+        (getf item :feed)
+        (getf item :site)))
 
 (defun make-opml (items)
   "Create OPML file for all feeds."
+  (setf items (select-opml-entries items))
   (with-output-to-string (s)
     (format s "<?xml version=\"1.0\" encoding=\"UTF-8\"?>~%")
     (format s "<opml version=\"2.0\">~%")
@@ -172,7 +177,7 @@
     host))
 
 (defun make-site-link (url)
-  (format nil "<a href=\"~a\">~a</a>" url (parse-host url)))
+  (fstr "<a href=\"~a\">~a</a>" url (parse-host url)))
 
 (defun make-nav-link (href text)
   "Create an HTML link."
