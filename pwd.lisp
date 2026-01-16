@@ -147,7 +147,7 @@
   :blog "https://damianwalsh.co.uk/posts/"
   :feed "https://damianwalsh.co.uk/feed.xml"
   :hnuid "damianwalsh"
-  :bio "I'm Damian, a designer based in Manchester, UK.")
+  :bio "Designer based in Manchester, UK.")
 
  (:name "Dennis Silin"
   :site "https://marscalendar.space/"
