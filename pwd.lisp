@@ -145,6 +145,14 @@
   :hnuid "DustinBrett"
   :bio "Self-taught software engineer, traveler, father and husband.")
 
+ (:name "Emma Goto"
+  :site "https://www.emgoto.com/"
+  :feed "https://www.emgoto.com/rss.xml"
+  :about "https://www.emgoto.com/about/"
+  :now "https://www.emgoto.com/now/"
+  :hnuid "emgoto"
+  :bio "Software engineer living in Tokyo.  Writes about hiking, books and code.")
+
  (:name "Gavin D. Howard"
   :site "https://gavinhoward.com/"
   :feed "https://gavinhoward.com/index.xml"
