@@ -466,6 +466,12 @@
   :hnuid "morleytj"
   :bio "Software developer and scientist at the Center for Digital Genomic Medicine.")
 
+  (:name "Thomas Tartière"
+  :site "https://thomastartiere.com/"
+  :blog "https://thomastartiere.com/blog"
+  :hnuid "tartieret"
+  :bio "CTO at Panevo.  Writes about web development and AI.")
+
  (:name "Tony Alicea"
   :site "https://tonyalicea.dev/"
   :feed "https://tonyalicea.dev/feed/feed.xml"
