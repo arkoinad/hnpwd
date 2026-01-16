@@ -7,10 +7,10 @@ community, along with an OPML file containing their RSS feeds.  Please
 visit the following link to view these resources:
 
 * Directory Website: [hnpwd.github.io][site]
-* RSS Feeds OPML: [pwd.opml][opml]
+* RSS Feeds OPML: [hnpwd.opml][opml]
 
 [site]: https://hnpwd.github.io/
-[opml]: https://hnpwd.github.io/pwd.opml
+[opml]: https://hnpwd.github.io/hnpwd.opml
 [lisp]: pwd.lisp
 
 

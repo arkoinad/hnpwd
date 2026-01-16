@@ -300,7 +300,7 @@
     (format s "      <hr>~%")
     (format s "      <nav>~%")
     (format s "        <a href=\"https://github.com/hnpwd/hnpwd.github.io#readme\">README</a>~%")
-    (format s "        <a href=\"pwd.opml\">OPML</a>~%")
+    (format s "        <a href=\"hnpwd.opml\">OPML</a>~%")
     (format s "        <a href=\"https://web.libera.chat/#hnpwd\">IRC</a>~%")
     (format s "      </nav>~%")
     (format s "      <p>~%")
@@ -327,7 +327,7 @@
   (let ((entries (read-entries)))
     (validate entries)
     (unless (validate-only-p)
-      (write-file "pwd.opml" (make-opml entries))
+      (write-file "hnpwd.opml" (make-opml entries))
       (write-file "index.html" (make-html entries)))))
 
 (when *main-mode*
