@@ -538,6 +538,13 @@
   :hnuid "nkko"
   :bio "Growth leader building AI products.  Writes on agents and startups.")
 
+ (:name "Omar Bahareth"
+  :site "https://omar.engineer/"
+  :blog "https://omar.engineer/articles/"
+  :about "https://omar.engineer/bio/"
+  :hnuid "obahareth"
+  :bio "CTO.  Writes about engineering, leadership and personal experiences.")
+
  (:name "Peter Bengtsson"
   :site "https://www.peterbe.com/"
   :feed "https://www.peterbe.com/rss.xml"
