@@ -158,6 +158,12 @@
   :hnuid "CrociDB"
   :bio "Programmer, gamedev and artist who writes about his projects and experiments.")
 
+ (:name "Cameron W. Barclift"
+  :site "https://cliftbar.site/"
+  :feed "https://cliftbar.site/atom.xml"
+  :hnuid "ungawatkt"
+  :bio "Software engineer with experience across multiple industries and technologies.")
+
  (:name "Captain's Quarters"
   :site "https://quarters.captaintouch.com/"
   :feed "https://quarters.captaintouch.com/blog/posts.xml"
