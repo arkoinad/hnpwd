@@ -65,6 +65,12 @@
   :hnuid "wttr"
   :bio "An IT sales/project manager turned web developer.")
 
+ (:name "Andre Franca"
+  :site "https://afranca.com.br/"
+  :feed "https://afranca.com.br/rss/"
+  :about "https://afranca.com.br/about/"
+  :bio "Tech nerd and open source enthusiast.")
+
  (:name "Andrew Montalenti"
   :site "https://amontalenti.com/"
   :feed "https://amontalenti.com/feed"
