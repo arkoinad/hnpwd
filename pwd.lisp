@@ -512,6 +512,14 @@
   :hnuid "ciferkey"
   :bio "Writes about projects events and ideas, sharing lessons learnt with others.")
 
+ (:name "Michael Salim"
+  :site "https://michaelsalim.co.uk/"
+  :blog "https://michaelsalim.co.uk/blog/"
+  :feed "https://michaelsalim.co.uk/feed.xml"
+  :about "https://michaelsalim.co.uk/about-me/"
+  :hnuid "michaelsalim"
+  :bio "Full-stack freelancer.  Develops open-source libraries and web services.")
+
  (:name "Mike Cardwell"
   :site "https://www.grepular.com/"
   :blog "https://www.grepular.com/blog/"
