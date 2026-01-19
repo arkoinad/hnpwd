@@ -844,6 +844,13 @@
   :hnuid "vijethph"
   :bio "Student at University College Dublin; former senior software engineer.")
 
+ (:name "Vinit Kumar"
+  :site "https://vinitkumar.me/"
+  :feed "https://vinitkumar.me/rss.xml"
+  :about "https://vinitkumar.me/about/"
+  :hnuid "mundanevoice"
+  :bio "Principal engineer and Django CMS Fellow.  Writes about Python, Go and systems.")
+
  (:name "WillAbides"
   :site "https://willabides.com/"
   :feed "https://willabides.com/index.xml"
