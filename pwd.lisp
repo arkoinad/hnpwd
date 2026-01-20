@@ -820,6 +820,13 @@
   :hnuid "tartieret"
   :bio "CTO at Panevo.  Writes about web development and AI.")
 
+ (:name "Tom Clancy"
+  :site "https://tomclancy.info/"
+  :feed "https://tomclancy.info/feeds/all.atom.xml"
+  :about "https://tomclancy.info/pages/about.html"
+  :hnuid "tclancy"
+  :bio "Developer and consultant taking apps from sketches to production.")
+
  (:name "Tony Alicea"
   :site "https://tonyalicea.dev/"
   :feed "https://tonyalicea.dev/feed/feed.xml"
