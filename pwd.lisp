@@ -296,6 +296,13 @@
   :hnuid "emgoto"
   :bio "Software engineer living in Tokyo.  Writes about hiking, books and code.")
 
+ (:name "Facundo Olano"
+  :site "https://olano.dev/"
+  :feed "https://olano.dev/feed.xml"
+  :about "https://olano.dev/#about"
+  :hnuid "facundo_olano"
+  :bio "Software engineer from Argentina.  Writes about code, books, games and movies.")
+
  (:name "Gavin Anderegg"
   :site "https://anderegg.ca/"
   :blog "https://anderegg.ca/archives/"
