@@ -10,6 +10,13 @@
   :hnuid "akpa1"
   :bio "Student, photographer and programmer.  Writes about everything and anything.")
 
+ (:name "Abhinav Gopalakrishnan"
+  :site "https://arkoinad.com/"
+  :blog "https://arkoinad.com/archive.html"
+  :feed "https://arkoinad.com/rss.xml"
+  :hnuid "arkoinad"
+  :bio "Yet another Software Engineer, Yet another blog")
+
  (:name "Aditya Athalye"
   :site "https://www.evalapply.org/"
   :blog "https://www.evalapply.org/posts/"
